@@ -13,9 +13,6 @@
         <p>
           Selamat datang di Toko Buku!
         </p>
-        <p>
-          Voluptate laboris aute voluptate eiusmod do in eu sint magna nisi exercitation elit culpa sed dolor sunt laboris reprehenderit velit esse esse veniam elit sunt ut ad quis officia in qui ad.
-        </p>
       </div>
     </div>
   </div>

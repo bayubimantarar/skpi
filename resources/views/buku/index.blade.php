@@ -25,7 +25,7 @@
               <a class="dropdown-item" href="/buku/cetak-pdf">
                 <i class="fa fa-file-pdf-o"></i> PDF
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="/buku/cetak-excel">
                 <i class="fa fa-file-excel-o"></i> Spreadsheet
               </a>
             </div>

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title')
-  Buku
+  Buku &raquo; Form Ubah
 @endsection
 
 @section('content')

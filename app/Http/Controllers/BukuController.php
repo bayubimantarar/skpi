@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use PDF;
+use Excel;
 use App\Models\Buku;
+use App\Exports\BukuExport;
 use Illuminate\Http\Request;
 use App\Http\Requests\BukuRequest;
 
@@ -16,7 +18,8 @@ class BukuController extends Controller
      */
     public function index()
     {
-        $buku = Buku::paginate(5);
+        $buku = Buku::orderBy('created_at', 'desc')->paginate(5);
+
         $totalBuku = $buku->count();
 
         return view('buku.index', compact(
@@ -116,7 +119,10 @@ class BukuController extends Controller
      */
     public function search(Request $request)
     {
-        $buku = Buku::where('judul', 'like', '%'.$request->judul.'%')->paginate(5);
+        $buku = Buku::where('judul', 'like', '%'.$request->judul.'%')
+            ->orderBy('created_at', 'desc')
+            ->paginate(5);
+
         $totalBuku = $buku->count();
 
         return view('buku.index', compact(
@@ -139,6 +145,23 @@ class BukuController extends Controller
             $buku = Buku::all();
 
             return PDF::loadView('buku.cetak_pdf', ['buku' => $buku])->stream('buku.pdf');
+        }else{
+            abort(404);
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function exportAllExcel()
+    {
+        $totalBuku = Buku::count();
+
+        if($totalBuku != 0){
+            return Excel::download(new BukuExport, 'Daftar Buku.xls');
         }else{
             abort(404);
         }

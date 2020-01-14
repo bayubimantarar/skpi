@@ -13,14 +13,6 @@
           <i class="fa fa-book"></i> Buku
         </a>
       </li>
-      <li class="nav-item">
-        <a
-          href="/kategori"
-          class="nav-link"
-        >
-          <i class="fa fa-tags"></i> Kategori
-        </a>
-      </li>
     </ul>
   </div>
 </nav>

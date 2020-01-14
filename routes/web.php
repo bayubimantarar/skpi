@@ -48,4 +48,8 @@ Route::group(['prefix' => 'buku'], function(){
         'uses' => 'BukuController@exportAllPDF',
         'as' => 'buku.cetak_pdf'
     ]);
+    Route::get('/cetak-excel', [
+        'uses' => 'BukuController@exportAllExcel',
+        'as' => 'buku.cetak_pdf'
+    ]);
 });
