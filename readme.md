@@ -21,8 +21,8 @@ Berikut adalah teknologi yang digunakan pada SKPI :
 1. Menu Utama
 ![Menu Utama](https://github.com/bayubimantarar/skpi/blob/master/screenshot/home.png)
 
-1. Menu Buku
-![Menu Utama](https://github.com/bayubimantarar/skpi/blob/master/screenshot/home.png)
+2. Menu Buku
+![Menu Utama](https://github.com/bayubimantarar/skpi/blob/master/screenshot/buku.png)
 
 3. Menu Buku - Form Tambah
 ![Menu Utama](https://github.com/bayubimantarar/skpi/blob/master/screenshot/form-tambah.png)
