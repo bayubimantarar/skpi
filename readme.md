@@ -9,6 +9,9 @@ Berikut adalah teknologi yang digunakan pada SKPI :
     2. PHP-FPM
     3. MongoDB
 
+## DUMP MongoDB
+Jalankan perintah `mongodump -d <nama_database> -o <direktori_database>`
+
 ## Menjalankan Aplikasi
 
 1. Clone repository ini dengan cara `git clone https://github.com/bayubimantarar/skpi`
