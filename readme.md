@@ -15,3 +15,8 @@ Berikut adalah teknologi yang digunakan pada SKPI :
 2. Masukkan perintah `cd skpi`
 3. Pada folder tersebut, jalankan perintah `docker-compose up`
 4. Setelah docker sudah berhasil running, masuk pada container mongoDB dan jalankan buat database dengan cara jalankan perintah `use toko_buku`
+
+## Screenshot Aplikasi
+
+1. Menu Utama
+![Menu Utama](https://github.com/bayubimantarar/skpi/blob/master/screenshot/home.png)
