@@ -12,10 +12,12 @@ class CreateBukuCollection extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('buku', function ($collection) {
+	{
+		Schema::dropIfExists('buku');
+
+		Schema::create('buku', function ($collection) {
             $collection->index('judul');
-            $collection->index('harga');
+			$collection->index('harga');
         });
     }
 
@@ -26,6 +28,6 @@ class CreateBukuCollection extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buku_collection');
+        //Schema::dropIfExists('buku');
     }
 }
